@@ -17,7 +17,7 @@ SEXP rWriteDoubleVector(double *var, int len, double shift);
 #define max(x1,x2) ( (x1) < (x2) ? (x2) : (x1) )
 
 #ifndef NODEBUG
-int DEBUG;
+extern int DEBUG;
 #define rdebug0(num,string)       if(DEBUG>=(num))Rprintf(string);
 #define rdebug1(num,string,a)     if(DEBUG>=(num))Rprintf(string,a);
 #define rdebug2(num,string,a,b)   if(DEBUG>=(num))Rprintf(string,a,b);

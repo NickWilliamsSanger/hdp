@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include "R-hdpMultinomial_iterate.h"
 
+int DEBUG=0;//Initialise debug to something.
 SEXP hdpMultinomial_iterate(SEXP hdpin, SEXP numiter, SEXP doconparam, SEXP dolik, SEXP dodebug)
 {
   int ni, docp, dl;
