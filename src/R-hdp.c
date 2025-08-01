@@ -628,10 +628,10 @@ void hdp_dpholdout(HDP *hdp, int jj) {
   conparam[cp].totalnd[tt] = 0;
   conparam[cp].totalnt[tt] = 0;
 
-  Free(dp->classnd);
-  Free(dp->classnt);
+  R_Free(dp->classnd);
+  R_Free(dp->classnt);
   if ( dpstate[jj] == ACTIVE )
-    Free(dp->beta);
+    R_Free(dp->beta);
 
   dpstate[jj] = HELDOUT;
 }

@@ -89,5 +89,5 @@ void rWriteDPList(SEXP result, int nn, DP *dpnew, int *dpstate, int numclass) {
     }
   UNPROTECT(1);
   }  
-  Free(dpnew);
+  R_Free(dpnew);
 }
